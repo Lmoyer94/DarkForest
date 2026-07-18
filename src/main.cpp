@@ -6,7 +6,7 @@
 #include <fstream>
 #include <iostream>
 
-#define MAJOR 4
+#define MAJOR 1
 #define MINOR 0
 #define REVISION 0
 
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
         std::string input = argv[1];
         if (input == "--version")
         {
-            std::cout << "Dark Forest v" << MAJOR << MINOR << REVISION << "\n";
+            std::cout << "Dark Forest v" << MAJOR << "." << MINOR << "." << REVISION << "\n";
             std::cout << "Copyright (C) 2026 Cyan Thunder Software Foundation" << "\n";
             std::cout << "This is free software; see the source for copying conditions." << "\n";
             std::cout << "There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE." << std::endl;
