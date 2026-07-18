@@ -55,6 +55,8 @@ void Civilization::Turn(std::vector<Signal>& signals)
                 if (params.optimism < 0.0)
                     params.optimism = 0.0;
 
+                points += 25;
+
                 return;
             }
 
@@ -158,7 +160,7 @@ void Civilization::search(std::vector<Signal>& signals)
                         if (params.optimism < 0.0)
                             params.optimism = 0.0;
 
-                        this->points += 50;
+                        this->points += 25;
                         matched = true;
                         break;
                     }
@@ -200,7 +202,7 @@ void Civilization::search(std::vector<Signal>& signals)
             if (params.optimism < 0.0)
                 params.optimism = 0.0;
 
-            this->points += 25;
+            this->points += 10;
         }
     }
 };

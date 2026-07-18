@@ -138,7 +138,7 @@ int main(int argc, char** argv)
     std::ofstream initial_state;
     initial_state.open("inputs.txt");
 
-    initial_state << "DarkForest v4.0\n";
+    initial_state << "DarkForest v" << MAJOR << "." << MINOR << "." << REVISION << "\n";
     initial_state << "Number Civs: " << civs.size() << "\n\n";
 
     for (int i = 0; i < civs.size(); i++)
@@ -200,7 +200,7 @@ int main(int argc, char** argv)
     std::ofstream results;
     results.open("results.txt");
 
-    results << "DarkForest v4.0\n";
+    results << "DarkForest v" << MAJOR << "." << MINOR << "." << REVISION << "\n";
     results << "Elapsed Time For Game: " << game_time.count() << " seconds" << "\n";
     results << "Turns Taken: " << turns_taken << "\n";
     results << "Longest Turn: " << longest_turn << "\n";

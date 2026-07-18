@@ -47,8 +47,6 @@ public:
     double points;
     int turns_alive;
 
-    bool stop_broadcasting;
-
     long long transmit_count;
     long long destroy_count;
     long long hide_count;
@@ -58,7 +56,6 @@ public:
         pos = Position(0, 0);
         params.aggression = 0.0;
         params.optimism = 0.0;
-        stop_broadcasting = false;
         points = 0;
     };
 
