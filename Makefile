@@ -2,7 +2,7 @@
 all:
 	g++ src/main.cpp src/civ.cpp -o bin/release/darkforest
 	g++ src/main.cpp src/civ.cpp -g -o bin/debug/darkforest
-	./bin/release/darkforest
+	./bin/release/darkforest 1000 100000
 
 .PHONY: build
 build:
